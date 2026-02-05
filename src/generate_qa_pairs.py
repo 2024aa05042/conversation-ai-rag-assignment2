@@ -245,6 +245,12 @@ def generate_question(generator, prompt: str, max_length: int = 80) -> str:
 
 
 def main():
+    """Command-line entrypoint for QA pair generation.
+
+    Loads fixed Wikipedia URLs, optionally fetches and caches page text, then
+    generates balanced QA pairs by type (factual, comparative, inferential, multihop).
+    Outputs JSON/JSONL files under `data/`.
+    """
     parser = argparse.ArgumentParser()
     parser.add_argument('--num', type=int, default=NUM_QA_TOTAL)
     parser.add_argument('--model-factual', type=str, default='mrm8488/t5-base-finetuned-question-generation-ap',

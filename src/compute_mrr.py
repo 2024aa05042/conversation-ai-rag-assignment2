@@ -28,6 +28,17 @@ def normalize_url(u: str) -> str:
 
 
 def compute_mrr(qa_list, k_per=50, n_final=100):
+    """Compute MRR and per-question ranks for a list of QA pairs.
+
+    Args:
+        qa_list: list of dicts with at least `question` and `url` keys.
+        k_per: top-K per retrieval method before fusion.
+        n_final: number of fused results to consider when ranking.
+
+    Returns:
+        A tuple (mrr, ranks) where `mrr` is the mean reciprocal rank and
+        `ranks` is a list of per-question ranks (int or None).
+    """
     fuser = RRFFuser()
     reciprocal_sum = 0.0
     ranks = []
@@ -68,6 +79,10 @@ def compute_mrr(qa_list, k_per=50, n_final=100):
 
 
 def main():
+    """CLI wrapper to load QA file and print overall MRR.
+
+    Parses `--qa-file`, runs `compute_mrr` and prints a simple summary.
+    """
     parser = argparse.ArgumentParser()
     parser.add_argument('--qa-file', type=str, default='data/qa_generated_100.json')
     parser.add_argument('--k-per', type=int, default=50, help='Top-K per method to retrieve before fusion')

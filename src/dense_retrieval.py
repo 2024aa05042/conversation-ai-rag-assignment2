@@ -34,6 +34,13 @@ TOP_K = 5
 
 class DenseRetriever:
     def __init__(self, model_name: str = MODEL_NAME):
+        """Create a DenseRetriever.
+
+        Args:
+            model_name: Hugging Face / SentenceTransformer model id to encode passages and queries.
+        """
+        # Initialize sentence-transformer model used for embeddings
+        # Model is small and fast by default: `all-MiniLM-L6-v2`.
         self.model = SentenceTransformer(model_name)
         self.index = None
         self.chunks = None
@@ -89,7 +96,10 @@ class DenseRetriever:
         return results
     
     def load_index(self):
-        """Load saved index."""
+        """Load saved FAISS index and metadata into memory.
+
+        Expects files produced by `build_index`: `INDEX_FILE` and `METADATA_FILE`.
+        """
         self.index = faiss.read_index(INDEX_FILE)
         with open(METADATA_FILE, 'r') as f:
             metadata = json.load(f)

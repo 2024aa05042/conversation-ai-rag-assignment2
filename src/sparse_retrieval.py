@@ -21,6 +21,10 @@ TOP_K = 5
 
 class SparseRetriever:
     def __init__(self):
+        """Initialize SparseRetriever state.
+
+        Uses BM25Okapi to score candidate passages by token overlap.
+        """
         self.bm25 = None
         self.chunks = None
         self.corpus_size = 0

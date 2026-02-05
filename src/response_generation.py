@@ -22,6 +22,11 @@ TOP_N_CHUNKS = 5
 
 class ResponseGenerator:
     def __init__(self):
+        """Initialize the response generator.
+
+        Loads the tokenizer and seq2seq model (Flan-T5 by default) and creates
+        an `RRFFuser` instance for retrieving fused context.
+        """
         print("🚀 Loading Flan-T5-base...")
         self.tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
         self.model = AutoModelForSeq2SeqLM.from_pretrained(MODEL_NAME)

@@ -20,6 +20,11 @@ TOP_N_FUSED = 5  # Final output
 
 class RRFFuser:
     def __init__(self):
+        """Create an RRF fuser that combines dense and sparse retrievers.
+
+        The fuser holds instances of `DenseRetriever` and `SparseRetriever` and
+        exposes a `fuse` method which returns RRF-ranked chunks.
+        """
         self.dense = DenseRetriever()
         self.sparse = SparseRetriever()
         
