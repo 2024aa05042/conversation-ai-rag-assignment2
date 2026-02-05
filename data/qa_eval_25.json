@@ -1,0 +1,162 @@
+[
+ {
+  "question": "In the early years of the war, the British were keen to exploit the German air force's influence to expand the German air force. The British Navy, under pressure from China in the early years of the w",
+  "ground_truth": "The living conditions led to disease and infection, such as trench foot, lice, typhus, trench fever, and the 'Spanish flu'. Naval war\nAt the start of the war, German cruisers were scattered across the globe, some of which were subsequently used to at...",
+  "source_url": "https://en.wikipedia.org/wiki/World_War_I",
+  "chunk_id": 2157,
+  "doc_title": "World War I",
+  "qa_type": "factual"
+ },
+ {
+  "question": "the late Thirteenth century, and they are known as \"The Cattleman\" and \"Yambo\" by their daughter and younger sister, Adriana Dungsey.\nIn the late Eighteenth century, the Dudjom lineage was established",
+  "ground_truth": "His son, H.E. Dungsey Namgay Dawa Rinpoche, currently spreads the Dudjom Tersar Lineage as a main Lineage holder by overseeing centers in the US and Spain in lieu of Dungsey Shenphen Dawa Norbu Rinpoche's wishes. Grandchildren\nKyabje Dudjom Rinpoche'...",
+  "source_url": "https://en.wikipedia.org/wiki/Dudjom_Jigdral_Yeshe_Dorje",
+  "chunk_id": 2921,
+  "doc_title": "Dudjom Jigdral Yeshe Dorje",
+  "qa_type": "factual"
+ },
+ {
+  "question": "One of the key differences between the two wings was the number of troops in the Netherlands, so the ratio of troops in the Netherlands (or the number of troops in the Netherlands) was very small, but",
+  "ground_truth": "However, Moltke grew concerned that the French might push too hard on his left flank and as the German Army increased in size from 1908 to 1914, he changed the allocation of forces between the two wings to 70:30. He also considered Dutch neutrality e...",
+  "source_url": "https://en.wikipedia.org/wiki/World_War_I",
+  "chunk_id": 3094,
+  "doc_title": "World War I",
+  "qa_type": "factual"
+ },
+ {
+  "question": "ema Zhepa (Sangye Pema Zhepa), a Chinese student, who is born on September 27, 1990, on December 13, 1990. He was born on September 28, 1990, on December 13, 1990. The day was the 21st day of the 8th ",
+  "ground_truth": "Reincarnations\nDudjom Rinpoche III\nThe Tibetan Dudjom Yangsi Rinpoche was Dudjom Rinpoche Sangye Pema Zhepa or Dudjom Rinpoche III, Sangye Pema Zhepa (1990\u20132022), who was born on October 9, 1990, which is also the 21st day of the 8th Tibetan lunar mo...",
+  "source_url": "https://en.wikipedia.org/wiki/Dudjom_Jigdral_Yeshe_Dorje",
+  "chunk_id": 2909,
+  "doc_title": "Dudjom Jigdral Yeshe Dorje",
+  "qa_type": "factual"
+ },
+ {
+  "question": "\"Pyrrha.\" \"Furious.\"\nHarry Potter and the Philosopher's Stone (1997).\nIn the second novel, Harry Potter and the Philosopher's Stone (1997).\nIn the third novel, Harry Potter and the Philosopher's Stone",
+  "ground_truth": "Appearances\nHarry Potter and the Philosopher's Stone\nHagrid is introduced in the opening chapter of the first novel, Harry Potter and the Philosopher's Stone (1997). Following the murder of James and Lily Potter by Lord Voldemort, Albus Dumbledore en...",
+  "source_url": "https://en.wikipedia.org/wiki/Rubeus_Hagrid",
+  "chunk_id": 4784,
+  "doc_title": "Rubeus Hagrid",
+  "qa_type": "factual"
+ },
+ {
+  "question": "His point is that the right wing was not a strong enough to achieve that task. Moltke did not wish to be asked whether the French had a right to withdraw from the conflict. The French were not obliged",
+  "ground_truth": "However, Moltke grew concerned that the French might push too hard on his left flank and as the German Army increased in size from 1908 to 1914, he changed the allocation of forces between the two wings to 70:30. He also considered Dutch neutrality e...",
+  "source_url": "https://en.wikipedia.org/wiki/World_War_I",
+  "chunk_id": 3094,
+  "doc_title": "World War I",
+  "qa_type": "comparative"
+ },
+ {
+  "question": "\"One of the most important elements of Einstein's genius is his intelligence. He has a wide range of qualities and abilities. His ability to learn and to make music has been greatly expanded.\"\n\n\n[Imag",
+  "ground_truth": "At the age of 17, he was heard by a school examiner in Aarau while playing Beethoven's violin sonatas. The examiner stated afterward that his playing was \"remarkable and revealing of 'great insight'\". What struck the examiner, writes Botstein, was th...",
+  "source_url": "https://en.wikipedia.org/wiki/Albert_Einstein",
+  "chunk_id": 7157,
+  "doc_title": "Albert Einstein",
+  "qa_type": "comparative"
+ },
+ {
+  "question": "\"The Old World\" in 1904, but was unable to be present.\n\n\nEinstein was a professor of mathematics at the University of California, Davis and later in his career as a Soviet engineer, before coming to t",
+  "ground_truth": "They included Margarete Lebach (a married Austrian), Estella Katzenellenbogen (the rich owner of a florist business), Toni Mendel (a wealthy Jewish widow) and Ethel Michanowski (a Berlin socialite), with whom he spent time and from whom he accepted g...",
+  "source_url": "https://en.wikipedia.org/wiki/Albert_Einstein",
+  "chunk_id": 5032,
+  "doc_title": "Albert Einstein",
+  "qa_type": "comparative"
+ },
+ {
+  "question": "and end of the list; for example, the result of a:start is:start, end is:start, end is:end, end is:end, end is:end, end is:end, end is:end, end is:end, end is:end, end is:end, end is:end, end is:end, ",
+  "ground_truth": "Raw string varieties, denoted by prefixing the string literal with r. Escape sequences are not interpreted; hence raw strings are useful where literal backslashes are common, such as in regular expressions and Windows-style paths. (Compare \"@-quoting...",
+  "source_url": "https://en.wikipedia.org/wiki/Python_(programming_language)",
+  "chunk_id": 5398,
+  "doc_title": "Python (programming language)",
+  "qa_type": "comparative"
+ },
+ {
+  "question": "This is a view that is popular among many physicists. Indeed, it is widely accepted that the first particle, from the smallest particle to the largest, has a definite momentum, i.e. a momentum at a ce",
+  "ground_truth": "Then, no matter how far the two particles were separated, a precise position measurement on one particle would imply the ability to predict, perfectly, the result of measuring the position of the other particle. Likewise, a precise momentum measureme...",
+  "source_url": "https://en.wikipedia.org/wiki/Albert_Einstein",
+  "chunk_id": 4598,
+  "doc_title": "Albert Einstein",
+  "qa_type": "comparative"
+ },
+ {
+  "question": "It is possible that the British had been given permission to be in a state of complete peace and stability, and had been given such permission to be a part of the peace process. However, in the face o",
+  "ground_truth": "It would be a pity if these Chinese supplant all other races. For the likes of us the mere thought is unspeakably dreary\".) He was greeted with even greater enthusiasm on the last leg of his tour, in which he spent twelve days in Mandatory Palestine,...",
+  "source_url": "https://en.wikipedia.org/wiki/Albert_Einstein",
+  "chunk_id": 6575,
+  "doc_title": "Albert Einstein",
+  "qa_type": "inferential"
+ },
+ {
+  "question": "is seeing a rapid reduction in water use. The situation is much more dire in the south of the country.\nWhat are the implications of the current situation?\nAccording to the Bureau of Statistics, the nu",
+  "ground_truth": "NGT slapped a fine of Rs. 5 crores to Sugar Mill and a fine of Rs. 25 lakhs to Gopaljee Dairy for discharging untreated effluents into the Simbhaoli drain. Water shortages\nAlong with ever-increasing pollution, water shortages are getting noticeably w...",
+  "source_url": "https://en.wikipedia.org/wiki/Ganges",
+  "chunk_id": 5926,
+  "doc_title": "Ganges",
+  "qa_type": "inferential"
+ },
+ {
+  "question": "t. The idea is that the two objects are not identical and that the two objects are only part of the wavefunction. At the same time, there are a number of different theories of how the two objects inte",
+  "ground_truth": "While he recognized that it made correct predictions, he believed a more fundamental description of nature must be possible. Over the years he presented multiple arguments to this effect, but the one he preferred most dated to a debate with Bohr in 1...",
+  "source_url": "https://en.wikipedia.org/wiki/Albert_Einstein",
+  "chunk_id": 2071,
+  "doc_title": "Albert Einstein",
+  "qa_type": "inferential"
+ },
+ {
+  "question": "seeing you, your eyes, your heart...You have taken the time to rest, your eyes...I will give you the first breath in your heart, and you will make it clear that you are one of the world's most preciou",
+  "ground_truth": "Among all hymns devoted to the Ganges, there are none more popular than the ones expressing the worshipper's wish to breathe his last surrounded by her waters. The Gangashtakam expresses this longing fervently:O Mother! ... Necklace adorning the worl...",
+  "source_url": "https://en.wikipedia.org/wiki/Ganges",
+  "chunk_id": 3755,
+  "doc_title": "Ganges",
+  "qa_type": "inferential"
+ },
+ {
+  "question": "s on 28 April 1917, which had been ordered to take part in the offensive. After the war, the submarine attack of the Russian Federation continued on the western front, the destroyer USS Virginia, whil",
+  "ground_truth": "United States enters the war\nThe United States was a major supplier of war material to the Allies but remained neutral in 1914, in large part due to domestic opposition. The most significant factor in creating the support Wilson needed was the German...",
+  "source_url": "https://en.wikipedia.org/wiki/World_War_I",
+  "chunk_id": 8331,
+  "doc_title": "World War I",
+  "qa_type": "inferential"
+ },
+ {
+  "question": "s Dr. Dr. Michael Green from the University of California, San Diego. He observed how the PSR B1913+16 was located in the inner-most part of the world. Green told me, \"It's not really that small. I do",
+  "ground_truth": "By contrast, gravitational waves cannot exist in the Newtonian theory of gravitation, which postulates that the physical interactions of gravity propagate at infinite speed. The first, indirect, detection of gravitational waves came in the 1970s thro...",
+  "source_url": "https://en.wikipedia.org/wiki/Albert_Einstein",
+  "chunk_id": 6044,
+  "doc_title": "Albert Einstein",
+  "qa_type": "multihop"
+ },
+ {
+  "question": "It is necessary to understand, however, that the European Union had been prepared to support a German invasion. This was a decision that was supported by the German public and, in the early years of t",
+  "ground_truth": "Once the German ultimatum to Russia expired on the morning of 1 August, the two countries were at war. At a meeting on 29 July, the British cabinet had narrowly decided its obligations to Belgium under the 1839 Treaty of London did not require it to ...",
+  "source_url": "https://en.wikipedia.org/wiki/World_War_I",
+  "chunk_id": 2118,
+  "doc_title": "World War I",
+  "qa_type": "multihop"
+ },
+ {
+  "question": "The IPCC is now trying to come up with a solution to this problem, however, as it appears the IPCC is now trying to get back the IPCC's earlier theory that the glacier is a threat to the Ganges river.",
+  "ground_truth": "The IPCC has now withdrawn that prediction, as the original source admitted that it was speculative and the cited source was not a peer-reviewed finding. In its statement, the IPCC stands by its general findings relating to the Himalayan glaciers bei...",
+  "source_url": "https://en.wikipedia.org/wiki/Ganges",
+  "chunk_id": 9922,
+  "doc_title": "Ganges",
+  "qa_type": "multihop"
+ },
+ {
+  "question": "???????, at the end of the first century BC. In the last few centuries BC, several major continents were combined and made up of a vast swath of land. These continents are now known as the \"Meth of th",
+  "ground_truth": "Its defining geological processes commenced seventy-five million years ago, when, as a part of the southern supercontinent Gondwana, it began a northeastwards drift\u2014lasting fifty million years\u2014across the then unformed Indian Ocean. The subcontinent's...",
+  "source_url": "https://en.wikipedia.org/wiki/Ganges",
+  "chunk_id": 8230,
+  "doc_title": "Ganges",
+  "qa_type": "multihop"
+ },
+ {
+  "question": "s were given a new name, the Newton?s.\nThe project was completed by 1848, and the Newton?s were built in 1848. By 1848, the Boston and Worcester Railroad opened into Cambridge. The Boston and Worceste",
+  "ground_truth": "History\nEarly history\nThe Boston and Worcester Railroad opened through northern Newton in 1834. It was originally planned to go through Lower Falls, but opposition from residents led it to be built to the north instead. Around 1845, the inhabitants o...",
+  "source_url": "https://en.wikipedia.org/wiki/Newton_Lower_Falls_Branch",
+  "chunk_id": 1117,
+  "doc_title": "Newton Lower Falls Branch",
+  "qa_type": "multihop"
+ }
+]

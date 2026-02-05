@@ -1,0 +1,19 @@
+# Navigate to your workspace (e.g., Desktop or Documents)
+cd ~/Desktop  # or wherever you prefer
+
+# Create project root
+mkdir hybrid_rag_final
+cd hybrid_rag_final
+
+# Create subdirs
+mkdir data src 
+
+# Virtual env setup (Python 3.10+ recommended)
+python3 -m venv venv
+source venv/bin/activate
+
+# Install libs (pip freeze > requirements.txt later)
+pip install wikipedia-api wikipedia beautifulsoup4 nltk sentence-transformers faiss-cpu rank-bm25 transformers torch requests numpy pandas
+pip freeze > requirements.txt
+python -m pip install streamlit
+streamlit run src/main_ui.py
