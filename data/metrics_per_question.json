@@ -282,7 +282,7 @@
     "found_rank": 1,
     "mrr_score": 1.0,
     "bertscore_f1": 0.7526948153972626,
-    "contextual_precision": 0.011254019292604502,
+    "contextual_precision": 0.011904761904761904,
     "hallucination_fraction": 1.0
   },
   {
@@ -488,10 +488,10 @@
     "ground_truth": "Recommenders can repeatedly show similar content, creating filter bubbles.",
     "generated_answer": "Recommenders can repeatedly show similar content, creating filter bubbles.",
     "true_url": "https://en.wikipedia.org/wiki/artificial_intelligence",
-    "found_rank": 2,
-    "mrr_score": 0.5,
+    "found_rank": 3,
+    "mrr_score": 0.3333333333333333,
     "bertscore_f1": 0.6267240941524506,
-    "contextual_precision": 0.003169572107765452,
+    "contextual_precision": 0.0031201248049922,
     "hallucination_fraction": 1.0
   },
   {
@@ -598,8 +598,8 @@
     "ground_truth": "Generative adversarial network.",
     "generated_answer": "Generative adversarial network.",
     "true_url": "https://en.wikipedia.org/wiki/machine_learning",
-    "found_rank": 4,
-    "mrr_score": 0.25,
+    "found_rank": 3,
+    "mrr_score": 0.3333333333333333,
     "bertscore_f1": 0.7540279030799866,
     "contextual_precision": 0.004761904761904762,
     "hallucination_fraction": 0.975609756097561
@@ -609,11 +609,11 @@
     "ground_truth": "Alan Turing.",
     "generated_answer": "Alan Turing.",
     "true_url": "https://en.wikipedia.org/wiki/artificial_intelligence",
-    "found_rank": 3,
-    "mrr_score": 0.3333333333333333,
+    "found_rank": 2,
+    "mrr_score": 0.5,
     "bertscore_f1": 0.7424560487270355,
-    "contextual_precision": 0.0030911901081916537,
-    "hallucination_fraction": 0.967741935483871
+    "contextual_precision": 0.0032,
+    "hallucination_fraction": 0.9705882352941176
   },
   {
     "question": "What is AGI?",
@@ -644,8 +644,8 @@
     "true_url": "https://en.wikipedia.org/wiki/human–computer_interaction",
     "found_rank": null,
     "mrr_score": 0.0,
-    "bertscore_f1": 0.515273766592145,
-    "contextual_precision": 0.0033333333333333335,
+    "bertscore_f1": 0.5279767215251923,
+    "contextual_precision": 0.00510204081632653,
     "hallucination_fraction": 1.0
   },
   {
@@ -711,7 +711,7 @@
     "found_rank": 1,
     "mrr_score": 1.0,
     "bertscore_f1": 0.6266739368438721,
-    "contextual_precision": 0.006430868167202572,
+    "contextual_precision": 0.006802721088435374,
     "hallucination_fraction": 1.0
   },
   {
