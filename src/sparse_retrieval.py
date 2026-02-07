@@ -35,6 +35,7 @@ class SparseRetriever:
         with open(chunks_file, 'r') as f:
             self.chunks = json.load(f)
         
+        # Tokenize text into words for BM25; BM25 works on token overlap signals.
         print("📝 Tokenizing...")
         tokenized_corpus = [word_tokenize(chunk['text'].lower()) for chunk in self.chunks]
         self.corpus_size = len(tokenized_corpus)
@@ -53,6 +54,7 @@ class SparseRetriever:
             self.build_index(CHUNKS_FILE)  # Auto-build
         
         query_tokens = word_tokenize(query.lower())
+        # Compute BM25 scores and return top-K chunks (ranked by score)
         print("Query tokens:", query_tokens)
         scores = self.bm25.get_scores(query_tokens)
         

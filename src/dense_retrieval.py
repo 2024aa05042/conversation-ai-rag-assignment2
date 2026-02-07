@@ -41,6 +41,7 @@ class DenseRetriever:
         """
         # Initialize sentence-transformer model used for embeddings
         # Model is small and fast by default: `all-MiniLM-L6-v2`.
+        # The model encodes chunks and queries to a fixed-size vector space.
         self.model = SentenceTransformer(model_name)
         self.index = None
         self.chunks = None
@@ -55,11 +56,13 @@ class DenseRetriever:
         texts = [chunk['text'] for chunk in self.chunks]
         print(f"📊 {len(texts)} chunks to embed")
         
+        # Compute dense embeddings for every chunk and normalize for cosine search.
         print("🤖 Embedding with", MODEL_NAME)
         embeddings = self.model.encode(texts, show_progress_bar=True, normalize_embeddings=True)
         embeddings = embeddings.astype('float32')
         
         # FAISS Index (InnerProduct = cosine sim since normalized)
+        # Using IndexFlatIP for simplicity; it's fast for low-dimensional experiments.
         dim = embeddings.shape[1]
         self.index = faiss.IndexFlatIP(dim)  # Inner product for cosine
         self.index.add(embeddings)
@@ -79,11 +82,13 @@ class DenseRetriever:
         if self.index is None:
             self.load_index()
         
+        # Encode query and search the FAISS index for nearest neighbors.
         query_emb = self.model.encode([query], normalize_embeddings=True).astype('float32')
         scores, indices = self.index.search(query_emb, k)
         
         results = []
         for score, idx in zip(scores[0], indices[0]):
+            # Map FAISS index id back to original chunk metadata
             chunk = self.chunks[idx]
             results.append({
                 'chunk_id': chunk['chunk_id'],

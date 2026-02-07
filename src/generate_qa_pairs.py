@@ -42,6 +42,7 @@ def load_fixed_urls(path: str) -> List[str]:
 
 
 def fetch_wikipedia_page(url: str, session: requests.Session, pause: float = 1.0) -> Dict:
+    # Lightweight scraper for Wikipedia pages; returns title and concatenated paragraphs.
     headers = {"User-Agent": "Hybrid-RAG-QA-Generator/1.0"}
     try:
         resp = session.get(url, headers=headers, timeout=15)
@@ -206,6 +207,7 @@ def generate_question(generator, prompt: str, max_length: int = 80) -> str:
                 kwargs.update({'do_sample': True, 'top_k': settings['top_k'], 'temperature': settings['temperature']})
             else:
                 kwargs.update({'do_sample': False})
+            # Call the generation pipeline with the chosen decoding settings.
             out = generator(prompt, **kwargs)
             text = out[0].get('generated_text') if isinstance(out[0], dict) else str(out[0])
             # remove only the prompt prefix occurrence at the start
@@ -267,6 +269,7 @@ def main():
     args = parser.parse_args()
 
     num = args.num
+    # Load (or fetch) the fixed set of Wikipedia pages used for QA generation.
     fixed_urls = load_fixed_urls(FIXED_URLS_FILE)
     pages = load_or_fetch_fixed_pages(fixed_urls, FIXED_PAGES_CACHE, fetch=args.fetch)
 
@@ -348,7 +351,7 @@ def main():
             except Exception as e:
                 continue
 
-            # basic cleaning
+            # basic cleaning and validation
             question = clean_text_basic(question)
             # If the question looks like garbage or fails type validation, try a rewrite step
             if is_garbage_text(question) or not validate_question_for_type(question, qtype):

@@ -106,7 +106,7 @@ def craft_adversarial_set(chunks: List[Dict], num_per_type: int = 5) -> List[Dic
     if not titles:
         titles = [f"Entity{i}" for i in range(50)]
 
-    # Ambiguous
+    # Ambiguous: pronoun/vague questions to test system's handling of referents
     for i in range(min(num_per_type, len(titles))):
         t = titles[i]
         q = make_ambiguous_question(t)
@@ -125,7 +125,7 @@ def craft_adversarial_set(chunks: List[Dict], num_per_type: int = 5) -> List[Dic
         q = make_multihop_question(t1, t2)
         questions.append({'question': q, 'type': 'multihop', 'seed_titles': [t1, t2]})
 
-    # Paraphrase robustness (base + paraphrase)
+    # Paraphrase robustness (create base question + a paraphrased variant)
     for i in range(min(num_per_type, len(titles))):
         t = titles[(i + 11) % len(titles)]
         base = f"What are the main contributions of {t}?"
@@ -164,7 +164,7 @@ def run_adversarial_tests(questions: List[Dict], out_file: str, k_per: int = 50,
         extraneous = [e for e in ret_ents if e not in gt_entities]
         halluc_frac = len(extraneous) / max(1, len(ret_ents)) if ret_ents else 0.0
 
-        # Basic URL coverage (whether any seed titles appear in retrieved URLs)
+        # Basic URL coverage: check if any seed page titles appear in retrieved URLs (simple proxy)
         found_seed_urls = []
         for c in fused:
             url = normalize_url(c.get('url') or '')

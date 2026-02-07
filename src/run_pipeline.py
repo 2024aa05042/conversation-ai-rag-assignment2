@@ -186,7 +186,7 @@ def main():
     write_json(per_q_out, metrics.get('per_question', []))
     print('Metrics written to', metrics_out, per_q_out)
 
-    # 3. Visualizations
+    # 3. Visualizations: create plots summarizing retrieval and contextual metrics
     plots_dir = os.path.join(args.out_dir, 'plots')
     ensure_dir(plots_dir)
     if args.plots:

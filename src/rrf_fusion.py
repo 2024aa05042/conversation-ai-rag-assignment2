@@ -31,6 +31,8 @@ class RRFFuser:
     def fuse(self, query: str, k_per: int = TOP_K_PER_METHOD, n_final: int = TOP_N_FUSED) -> List[Dict]:
         """Get top-K dense + sparse, fuse by RRF, return top-N."""
         # Retrieve
+        # Retrieve top-K candidates from both dense and sparse retrievers.
+        # Later these rankings are combined using the Reciprocal Rank Fusion formula.
         dense_results = self.dense.retrieve(query, k_per)
         sparse_results = self.sparse.retrieve(query, k_per)
         
@@ -41,7 +43,7 @@ class RRFFuser:
         # All unique chunks
         all_chunk_ids = set(dense_ranks) | set(sparse_ranks)
         
-        # RRF scores
+        # Compute RRF scores for each unique chunk id found by either method.
         rrf_scores = {}
         for chunk_id in all_chunk_ids:
             score = 0.0
@@ -54,7 +56,8 @@ class RRFFuser:
         # Top-N by RRF
         top_chunks = sorted(rrf_scores.items(), key=lambda x: x[1], reverse=True)[:n_final]
         
-        # Enrich with full data (load chunks)
+        # Load original chunk metadata to enrich fused results with URLs/titles/full_text
+        # so downstream components (generation/metrics) can use the text.
         with open(CHUNKS_FILE, 'r') as f:
             all_chunks = {c['chunk_id']: c for c in json.load(f)}
         

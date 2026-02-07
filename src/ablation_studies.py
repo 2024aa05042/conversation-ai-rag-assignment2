@@ -51,11 +51,13 @@ def fuse_rrf(dense_res: List[Dict], sparse_res: List[Dict], rrf_k: int, n_final:
     Each input list is ordered (rank 1..). Returns top `n_final` fused items enriched
     with `rrf_score`, `dense_rank`, `sparse_rank`, `url`, `title`, and `full_text` when present.
     """
+    # Build rank maps from method results: chunk_id -> rank (1-based)
     dense_ranks = {res['chunk_id']: i + 1 for i, res in enumerate(dense_res)}
     sparse_ranks = {res['chunk_id']: i + 1 for i, res in enumerate(sparse_res)}
 
     all_ids = set(list(dense_ranks.keys()) + list(sparse_ranks.keys()))
     rrf_scores = {}
+    # RRF scoring: sum of 1/(k + rank) across methods for each candidate
     for cid in all_ids:
         score = 0.0
         if cid in dense_ranks:

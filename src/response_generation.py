@@ -28,8 +28,11 @@ class ResponseGenerator:
         an `RRFFuser` instance for retrieving fused context.
         """
         print("🚀 Loading Flan-T5-base...")
+        # Load tokenizer and model; these may download weights on first run.
+        # Using seq2seq model (Flan-T5) for answer generation from retrieved context.
         self.tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
         self.model = AutoModelForSeq2SeqLM.from_pretrained(MODEL_NAME)
+        # RRFFuser provides fused context to feed the generator
         self.fuser = RRFFuser()
         print("✅ LLM ready!")
     
@@ -45,19 +48,23 @@ class ResponseGenerator:
             print(f"  - {chunk['title']}: {chunk['rrf_score']}")
         
         # 2. Build context (token-limited)
+        # Concatenate titles + full_text for each fused chunk to form the LLM context.
         context = "\n\n".join([c['title'] + ": " + c['full_text'] for c in fused_chunks])
         #print("\nConstructed Context:\n", context[:500] + "...\n")  # Preview
+        # Measure token length and trim the lowest-ranked chunk if the context exceeds budget.
         context_tokens = len(self.tokenizer(context)['input_ids'])
         # Trim if too long
         if context_tokens > MAX_CONTEXT_TOKENS:
-            trimmed = fused_chunks[:-1]  # Drop lowest RRF
+            trimmed = fused_chunks[:-1]  # Drop lowest RRF-ranked chunk to reduce tokens
             context = "\n\n".join([c['title'] + ": " + c['full_text'] for c in trimmed])
         # 3. Prompt
         prompt = f"Answer based ONLY on the context:\n\n{context}\n\nQuestion: {query}\nAnswer:"
         print("Final context after trimming has", len(self.tokenizer(context)['input_ids']), "tokens.")
         # 4. Generate
+        # Tokenize prompt with truncation to model context length (safety).
         inputs = self.tokenizer(prompt, return_tensors="pt", max_length=MAX_CONTEXT_TOKENS, truncation=True)
 
+        # Run generation in no-grad mode to save memory.
         with torch.no_grad():
             print("Generating answer...........................................................................................")
             outputs = self.model.generate(

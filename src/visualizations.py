@@ -56,6 +56,7 @@ def ensure_dir(d: str):
 
 def plot_metric_comparison(records: List[Dict], out_dir: str):
     """Bar chart of average metrics across dataset."""
+    # Compute simple averages for the main metrics and render a labeled bar chart.
     meds = {}
     N = len(records)
     if N == 0:

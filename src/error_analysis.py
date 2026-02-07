@@ -60,6 +60,7 @@ def load_qa_types(qa_file: str) -> Dict[str, str]:
     mapping = {}
     for qa in qa_list:
         q = qa.get('question') or qa.get('Question') or ''
+        # Accept multiple possible fields for QA type; some files use 'category' or 'qa_type'
         qtype = qa.get('category')
         if q:
             mapping[q.strip()] = qtype
@@ -72,9 +73,8 @@ def categorize_item(item: Dict, thresholds: Dict) -> List[str]:
     Labels: 'retrieval', 'generation', 'context', or empty list for OK.
     """
     labels = []
-    # retrieval failure: found_rank missing/None/0
-    rank = item.get('found_rank') or item.get('found_rank', None) or item.get('found_rank', 0)
-    # Some sources call it 'found_rank' or 'found_rank' may be null
+    # retrieval failure: treat missing/zero `found_rank` as a retrieval miss
+    # normalize access to the field (some outputs may use None/0/absent)
     found_rank = item.get('found_rank')
     if not found_rank:
         labels.append('retrieval')
@@ -108,7 +108,8 @@ def aggregate_by_type(records: List[Dict], qa_type_map: Dict[str, str], threshol
 
     for item in records:
         q = (item.get('question') or '').strip()
-        qtype = qa_type_map.get(q, 'category')
+        # Map to known qa_type; default to 'unknown' when not provided in mapping
+        qtype = qa_type_map.get(q, 'unknown')
         labels = categorize_item(item, thresholds)
         primary = labels[0] if labels else 'ok'
 

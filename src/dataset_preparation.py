@@ -123,7 +123,8 @@ def chunk_text(text: str, url: str, title: str) -> List[Dict]:
         current_chunk.append(sent)
         current_tokens += sent_tokens
     # Final
-    if current_chunk:
+        # Final chunk flush: ensure last collected sentences are emitted if they meet size.
+        if current_chunk:
         chunk = {
             'chunk_id': f"{title.replace(' ', '_')}_{chunk_id}",
             'text': ' '.join(current_chunk),
