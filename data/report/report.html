@@ -1,0 +1,84 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>RAG Evaluation Report</title></head><body>
+<h1>RAG Evaluation Report</h1>
+<p>Generated: 2026-02-07T09:48:07.087861 UTC</p>
+<h2>Summary Metrics</h2>
+<ul>
+<li><strong>Q</strong>: 103</li>
+<li><strong>MRR</strong>: 0.7129912159038373</li>
+<li><strong>BERTScore_F1</strong>: 0.6760173865313669</li>
+<li><strong>Contextual_Precision</strong>: 0.0063800087827160686</li>
+<li><strong>Hallucination_Fraction</strong>: 0.9898977912398026</li>
+</ul>
+<h2>Plots</h2>
+<h3>ablation_k10_n10.png</h3>
+<img src="plots\ablation_k10_n10.png" style="max-width:900px;width:100%;height:auto;"/>
+<h3>ablation_k10_n20.png</h3>
+<img src="plots\ablation_k10_n20.png" style="max-width:900px;width:100%;height:auto;"/>
+<h3>ablation_k5_n10.png</h3>
+<img src="plots\ablation_k5_n10.png" style="max-width:900px;width:100%;height:auto;"/>
+<h3>ablation_k5_n20.png</h3>
+<img src="plots\ablation_k5_n20.png" style="max-width:900px;width:100%;height:auto;"/>
+<h3>bertscore_distribution.png</h3>
+<img src="plots\bertscore_distribution.png" style="max-width:900px;width:100%;height:auto;"/>
+<h3>contextual_precision_distribution.png</h3>
+<img src="plots\contextual_precision_distribution.png" style="max-width:900px;width:100%;height:auto;"/>
+<h3>hallucination_distribution.png</h3>
+<img src="plots\hallucination_distribution.png" style="max-width:900px;width:100%;height:auto;"/>
+<h3>metric_comparison.png</h3>
+<img src="plots\metric_comparison.png" style="max-width:900px;width:100%;height:auto;"/>
+<h2>Per-question (first 50)</h2>
+<table border="1" cellpadding="4" cellspacing="0">
+<tr><th>#</th><th>question</th><th>qa_type</th><th>found_rank</th><th>mrr_score</th><th>bertscore_f1</th><th>contextual_precision</th><th>hallucination_fraction</th></tr>
+<tr><td>1</td><td>What is artificial intelligence (AI)?</td><td></td><td>1</td><td>1.000</td><td>0.716</td><td>0.040</td><td>0.986</td></tr>
+<tr><td>2</td><td>In which year was AI founded as an academic discipline?</td><td></td><td>2</td><td>0.500</td><td>0.547</td><td>0.000</td><td>1.000</td></tr>
+<tr><td>3</td><td>What are AI winters?</td><td></td><td>1</td><td>1.000</td><td>0.712</td><td>0.015</td><td>1.000</td></tr>
+<tr><td>4</td><td>Which hardware greatly boosted AI after 2012?</td><td></td><td>2</td><td>0.500</td><td>0.623</td><td>0.000</td><td>1.000</td></tr>
+<tr><td>5</td><td>What architecture accelerated AI progress after 2017?</td><td></td><td>1</td><td>1.000</td><td>0.632</td><td>0.005</td><td>0.968</td></tr>
+<tr><td>6</td><td>What is supervised learning?</td><td></td><td>2</td><td>0.500</td><td>0.707</td><td>0.008</td><td>1.000</td></tr>
+<tr><td>7</td><td>What is unsupervised learning?</td><td></td><td>2</td><td>0.500</td><td>0.678</td><td>0.005</td><td>1.000</td></tr>
+<tr><td>8</td><td>What is reinforcement learning based on?</td><td></td><td>1</td><td>1.000</td><td>0.626</td><td>0.009</td><td>1.000</td></tr>
+<tr><td>9</td><td>What are hallucinations in GPT models?</td><td></td><td>1</td><td>1.000</td><td>0.643</td><td>0.007</td><td>1.000</td></tr>
+<tr><td>10</td><td>What technique reduces hallucinations?</td><td></td><td>4</td><td>0.250</td><td>0.579</td><td>0.002</td><td>1.000</td></tr>
+<tr><td>11</td><td>Which is older as a discipline: AI or machine learning?</td><td></td><td>3</td><td>0.333</td><td>0.821</td><td>0.006</td><td>1.000</td></tr>
+<tr><td>12</td><td>Are GPUs or CPUs dominant for large-scale ML training today?</td><td></td><td>3</td><td>0.333</td><td>0.671</td><td>0.002</td><td>1.000</td></tr>
+<tr><td>13</td><td>Is domestic or international trade typically more costly?</td><td></td><td>1</td><td>1.000</td><td>0.754</td><td>0.003</td><td>0.971</td></tr>
+<tr><td>14</td><td>Does qualitative or quantitative research use numerical data?</td><td></td><td>1</td><td>1.000</td><td>0.852</td><td>0.004</td><td>0.944</td></tr>
+<tr><td>15</td><td>Which focuses on interfaces between people and computers: HCI or computer graphics?</td><td></td><td>None</td><td>0.000</td><td>0.599</td><td>0.000</td><td>1.000</td></tr>
+<tr><td>16</td><td>Why did deep learning surge after 2012?</td><td></td><td>4</td><td>0.250</td><td>0.690</td><td>0.012</td><td>1.000</td></tr>
+<tr><td>17</td><td>Why can AI systems create filter bubbles?</td><td></td><td>1</td><td>1.000</td><td>0.612</td><td>0.008</td><td>1.000</td></tr>
+<tr><td>18</td><td>Why is explainability important in AI?</td><td></td><td>2</td><td>0.500</td><td>0.629</td><td>0.014</td><td>1.000</td></tr>
+<tr><td>19</td><td>Why is international trade complex?</td><td></td><td>1</td><td>1.000</td><td>0.687</td><td>0.013</td><td>1.000</td></tr>
+<tr><td>20</td><td>Why is computer vision linked to neurobiology?</td><td></td><td>1</td><td>1.000</td><td>0.716</td><td>0.010</td><td>1.000</td></tr>
+<tr><td>21</td><td>How did GPUs and big datasets together influence deep learning success?</td><td></td><td>2</td><td>0.500</td><td>0.787</td><td>0.010</td><td>1.000</td></tr>
+<tr><td>22</td><td>How do RLHF and hallucinations connect?</td><td></td><td>2</td><td>0.500</td><td>0.668</td><td>0.009</td><td>1.000</td></tr>
+<tr><td>23</td><td>How do AI agents improve over time?</td><td></td><td>1</td><td>1.000</td><td>0.679</td><td>0.013</td><td>1.000</td></tr>
+<tr><td>24</td><td>What is digital media?</td><td></td><td>1</td><td>1.000</td><td>0.761</td><td>0.008</td><td>1.000</td></tr>
+<tr><td>25</td><td>What is HCI?</td><td></td><td>None</td><td>0.000</td><td>0.627</td><td>0.009</td><td>0.981</td></tr>
+<tr><td>26</td><td>What is an export?</td><td></td><td>1</td><td>1.000</td><td>0.753</td><td>0.012</td><td>1.000</td></tr>
+<tr><td>27</td><td>What is IoT?</td><td></td><td>1</td><td>1.000</td><td>0.703</td><td>0.015</td><td>0.957</td></tr>
+<tr><td>28</td><td>What is rendering in computer graphics?</td><td></td><td>1</td><td>1.000</td><td>0.734</td><td>0.009</td><td>1.000</td></tr>
+<tr><td>29</td><td>What is a transformer model in AI known for?</td><td></td><td>1</td><td>1.000</td><td>0.736</td><td>0.008</td><td>1.000</td></tr>
+<tr><td>30</td><td>What kind of tasks can large language models perform?</td><td></td><td>4</td><td>0.250</td><td>0.719</td><td>0.003</td><td>1.000</td></tr>
+<tr><td>31</td><td>What is a recommender system used for?</td><td></td><td>6</td><td>0.167</td><td>0.605</td><td>0.003</td><td>1.000</td></tr>
+<tr><td>32</td><td>What is the goal of reinforcement learning agents?</td><td></td><td>2</td><td>0.500</td><td>0.667</td><td>0.005</td><td>1.000</td></tr>
+<tr><td>33</td><td>What does computer graphics study?</td><td></td><td>1</td><td>1.000</td><td>0.719</td><td>0.013</td><td>1.000</td></tr>
+<tr><td>34</td><td>Which focuses on language: NLP or computer vision?</td><td></td><td>5</td><td>0.200</td><td>0.768</td><td>0.007</td><td>0.970</td></tr>
+<tr><td>35</td><td>Which is about visual data: computer vision or HCI?</td><td></td><td>1</td><td>1.000</td><td>0.786</td><td>0.003</td><td>0.929</td></tr>
+<tr><td>36</td><td>Which relies on rewards: reinforcement learning or clustering?</td><td></td><td>1</td><td>1.000</td><td>0.597</td><td>0.004</td><td>0.944</td></tr>
+<tr><td>37</td><td>Which handles human–computer interfaces: HCI or IoT?</td><td></td><td>None</td><td>0.000</td><td>0.628</td><td>0.002</td><td>1.000</td></tr>
+<tr><td>38</td><td>Which involves cross-border exchange: domestic trade or international trade?</td><td></td><td>1</td><td>1.000</td><td>0.754</td><td>0.003</td><td>0.971</td></tr>
+<tr><td>39</td><td>Why do large language models sometimes hallucinate?</td><td></td><td>3</td><td>0.333</td><td>0.594</td><td>0.005</td><td>1.000</td></tr>
+<tr><td>40</td><td>Why are GPUs preferred for AI training?</td><td></td><td>3</td><td>0.333</td><td>0.648</td><td>0.003</td><td>0.971</td></tr>
+<tr><td>41</td><td>Why can AI raise ethical concerns?</td><td></td><td>1</td><td>1.000</td><td>0.552</td><td>0.008</td><td>1.000</td></tr>
+<tr><td>42</td><td>Why is digital media influential in society?</td><td></td><td>1</td><td>1.000</td><td>0.669</td><td>0.005</td><td>0.958</td></tr>
+<tr><td>43</td><td>Why does wind power challenge grid stability?</td><td></td><td>1</td><td>1.000</td><td>0.727</td><td>0.010</td><td>0.957</td></tr>
+<tr><td>44</td><td>How do transformers and big data together improve language models?</td><td></td><td>1</td><td>1.000</td><td>0.741</td><td>0.007</td><td>0.974</td></tr>
+<tr><td>45</td><td>How do recommender systems and filter bubbles relate?</td><td></td><td>3</td><td>0.333</td><td>0.627</td><td>0.003</td><td>1.000</td></tr>
+<tr><td>46</td><td>How does computer vision support robotics?</td><td></td><td>1</td><td>1.000</td><td>0.651</td><td>0.007</td><td>0.974</td></tr>
+<tr><td>47</td><td>How does IoT combined with AI enable smart environments?</td><td></td><td>1</td><td>1.000</td><td>0.735</td><td>0.012</td><td>1.000</td></tr>
+<tr><td>48</td><td>How do supervised learning and labeled data connect?</td><td></td><td>1</td><td>1.000</td><td>0.743</td><td>0.005</td><td>0.952</td></tr>
+<tr><td>49</td><td>What does NLP stand for?</td><td></td><td>2</td><td>0.500</td><td>0.755</td><td>0.005</td><td>0.977</td></tr>
+<tr><td>50</td><td>What is a neural network inspired by?</td><td></td><td>3</td><td>0.333</td><td>0.733</td><td>0.008</td><td>1.000</td></tr>
+</table>
+</body></html>

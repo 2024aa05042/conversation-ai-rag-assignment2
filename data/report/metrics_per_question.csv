@@ -1,0 +1,104 @@
+question,qa_type,found_rank,mrr_score,bertscore_f1,contextual_precision,hallucination_fraction,generated_answer
+What is artificial intelligence (AI)?,,1,1.0,0.7162199318408966,0.04044117647058824,0.9857142857142858,The capability of computational systems to perform tasks typically associated with human intelligence
+In which year was AI founded as an academic discipline?,,2,0.5,0.5474809035658836,0.0,1.0,1956
+What are AI winters?,,1,1.0,0.7118344604969025,0.015254237288135594,1.0,periods of disappointment and loss of funding
+Which hardware greatly boosted AI after 2012?,,2,0.5,0.6231133192777634,0.0,1.0,unanswerable
+What architecture accelerated AI progress after 2017?,,1,1.0,0.6319345831871033,0.004901960784313725,0.967741935483871,the transformer architecture
+What is supervised learning?,,2,0.5,0.7071887403726578,0.008333333333333333,1.0,Supervised learning algorithms build a mathematical model of a set of data that contains both the inputs and the desired output
+What is unsupervised learning?,,2,0.5,0.6779413223266602,0.0054249547920434,1.0,"find structures in data that has not been labelled, classified or categorised. Instead of responding to feedback, unsupervised learning algorithms identify commonalities and react based on the presence or absence of such commonalities"
+What is reinforcement learning based on?,,1,1.0,0.6255638003349304,0.008561643835616438,1.0,rewarded for good responses and punished for bad ones
+What are hallucinations in GPT models?,,1,1.0,0.6430035829544067,0.006779661016949152,1.0,"generating falsehoods called ""hallucinations"
+What technique reduces hallucinations?,,4,0.25,0.5786127299070358,0.0017211703958691911,1.0,unanswerable
+Which is older as a discipline: AI or machine learning?,,3,0.3333333333333333,0.8214201331138611,0.006309148264984227,1.0,machine learning
+Are GPUs or CPUs dominant for large-scale ML training today?,,3,0.3333333333333333,0.6706189513206482,0.001639344262295082,1.0,"graphics processing units (GPUs), often with AI-specific enhancements, had displaced CPUs as the dominant method of training large-scale (commercial and academic) machine learning"
+Is domestic or international trade typically more costly?,,1,1.0,0.7539931833744049,0.0032258064516129032,0.9705882352941176,"international trade is, in principle, not different from domestic trade as the motivation and the behavior of parties involved in a trade do not change fundamentally"
+Does qualitative or quantitative research use numerical data?,,1,1.0,0.8518584370613098,0.0035398230088495575,0.9444444444444444,"Quantitative research Quantitative research involves systematic empirical investigation of quantitative properties and phenomena and their relationships, by asking a narrow question and collecting numerical data to analyze it utilizing statistical"
+Which focuses on interfaces between people and computers: HCI or computer graphics?,,,0.0,0.5988636985421181,0.0,1.0,HCI
+Why did deep learning surge after 2012?,,4,0.25,0.6904756128787994,0.011608623548922056,1.0,TDNN was introduced in 1987 by Alex Waibel to apply CNN to phoneme recognition. It used convolutional layers and downsampling layers to classify non-linearily separable pattern classes
+Why can AI systems create filter bubbles?,,1,1.0,0.6121564507484436,0.00825082508250825,1.0,"Users also tended to watch more content on the same subject, so the AI led people into filter bubbles where they received multiple versions of the same misinformation. This convinced many users that the misinformation was true, and ultimately undermined trust"
+Why is explainability important in AI?,,2,0.5,0.6285238564014435,0.014423076923076924,1.0,humans can understand the decisions or predictions made by the AI
+Why is international trade complex?,,1,1.0,0.6873715668916702,0.013071895424836602,1.0,"cross-border trade typically incurs additional costs such as explicit tariffs as well as explicit or implicit non-tariff barriers such as time costs (due to border delays), language and cultural"
+Why is computer vision linked to neurobiology?,,1,1.0,0.7156667560338974,0.01020408163265306,1.0,the primary visual cortex
+How did GPUs and big datasets together influence deep learning success?,,2,0.5,0.7874745726585388,0.009615384615384616,1.0,increased computer power (including the hundred-fold increase in speed by switching
+How do RLHF and hallucinations connect?,,2,0.5,0.6677533984184265,0.008517887563884156,1.0,unanswerable
+How do AI agents improve over time?,,1,1.0,0.6786159574985504,0.013289036544850499,1.0,through experience or training
+What is digital media?,,1,1.0,0.760616660118103,0.007987220447284345,1.0,any communication media that operates in conjunction with various encoded machine-readable data formats
+What is HCI?,,,0.0,0.6267687231302261,0.00946372239747634,0.9811320754716981,human-machine
+What is an export?,,1,1.0,0.7526948153972626,0.011904761904761904,1.0,the act of obtaining the files from the repositories
+What is IoT?,,1,1.0,0.7033635973930359,0.01487603305785124,0.9565217391304348,"IoT describes physical objects that are embedded with sensors, processing ability, software, and other technologies that connect and exchange data with other devices and systems over the Internet or other communication"
+What is rendering in computer graphics?,,1,1.0,0.7338274270296097,0.009345794392523364,1.0,generation of a 2D image from a 3D model by means of computer programs
+What is a transformer model in AI known for?,,1,1.0,0.7355273962020874,0.008389261744966443,1.0,unanswerable
+What kind of tasks can large language models perform?,,4,0.25,0.7189215123653412,0.0032679738562091504,1.0,unanswerable
+What is a recommender system used for?,,6,0.16666666666666666,0.6046886891126633,0.003205128205128205,1.0,advice and help to do their business
+What is the goal of reinforcement learning agents?,,2,0.5,0.6667470633983612,0.004838709677419355,1.0,to maximise some notion of cumulative reward
+What does computer graphics study?,,1,1.0,0.7189491093158722,0.012698412698412698,1.0,methods for digitally synthesizing and manipulating
+Which focuses on language: NLP or computer vision?,,5,0.2,0.767938882112503,0.006644518272425249,0.9696969696969697,Natural language processing (NLP)
+Which is about visual data: computer vision or HCI?,,1,1.0,0.7856226861476898,0.0033613445378151263,0.9285714285714286,HCI
+Which relies on rewards: reinforcement learning or clustering?,,1,1.0,0.5966656506061554,0.0035650623885918,0.9444444444444444,Reinforcement
+Which handles human–computer interfaces: HCI or IoT?,,,0.0,0.6279115378856659,0.0016474464579901153,1.0,IoT
+Which involves cross-border exchange: domestic trade or international trade?,,1,1.0,0.7539931833744049,0.0032258064516129032,0.9705882352941176,international trade
+Why do large language models sometimes hallucinate?,,3,0.3333333333333333,0.594348594546318,0.004622496147919877,1.0,do language very well [but t]hey're not so good at thinking
+Why are GPUs preferred for AI training?,,3,0.3333333333333333,0.6477659493684769,0.003278688524590164,0.9705882352941176,increase in computer power (including the hundred-fold increase in speed by switching
+Why can AI raise ethical concerns?,,1,1.0,0.5518637523055077,0.007961783439490446,1.0,AI sentience would give rise to concerns of welfare and legal protection
+Why is digital media influential in society?,,1,1.0,0.6685303896665573,0.004830917874396135,0.9583333333333334,The ubiquity of digital media and its effects on society suggest that we are at the start of a new era in industrial history
+Why does wind power challenge grid stability?,,1,1.0,0.7274808585643768,0.009771986970684038,0.9565217391304348,instantaneous
+How do transformers and big data together improve language models?,,1,1.0,0.7412773668766022,0.006535947712418301,0.9743589743589743,generate text based on the semantic relationships between words in sentences
+How do recommender systems and filter bubbles relate?,,3,0.3333333333333333,0.6267240941524506,0.0031201248049922,1.0,"They were given the goal of maximizing user engagement (that is, the only goal was to keep people watching"
+How does computer vision support robotics?,,1,1.0,0.6514855921268463,0.006589785831960461,0.9743589743589743,autonomous path planning or deliberation for robotic systems to navigate through an environment
+How does IoT combined with AI enable smart environments?,,1,1.0,0.7350826859474182,0.011686143572621035,1.0,mix and match of potential IoT devices from different systems that benefit its users
+How do supervised learning and labeled data connect?,,1,1.0,0.7428639382123947,0.004934210526315789,0.9523809523809523,"Some of the training examples are missing training labels, yet many machine-learning researchers have found that unlabelled data, when used in conjunction with a small amount of labelled data, can produce a considerable improvement in learning accuracy"
+What does NLP stand for?,,2,0.5,0.7553150057792664,0.005,0.9767441860465116,Natural Language Processing
+What is a neural network inspired by?,,3,0.3333333333333333,0.7329794764518738,0.008291873963515755,1.0,information processing and distributed communication nodes in biological
+What is backpropagation used for?,,2,0.5,0.7515711784362793,0.006557377049180328,0.9722222222222222,learn to model complex relationships between inputs and outputs and find patterns in data
+What is a classifier in AI?,,1,1.0,0.6179446429014206,0.009884678747940691,1.0,functions that use pattern matching to determine the closest match
+What is a CNN commonly used for?,,2,0.5,0.6484948098659515,0.007974481658692184,1.0,"backpropagation, but did not cite the original work. 1980s-2000s The time delay neural network (TDNN) was introduced in 1987 by Alex Waibel to apply"
+What is reinforcement learning driven by?,,1,1.0,0.614330418407917,0.0016233766233766235,1.0,interaction between cognition and emotion
+What is GAN short for?,,3,0.3333333333333333,0.7540279030799866,0.004761904761904762,0.975609756097561,unanswerable
+Who proposed the Turing Test?,,2,0.5,0.7424560487270355,0.0032,0.9705882352941176,Alan Turing
+What is AGI?,,2,0.5,0.6731031388044357,0.011475409836065573,1.0,a hypothetical type of artificial intelligence that would match or surpass human capabilities across virtually all cognitive tasks
+What is digital media?,,1,1.0,0.7888572812080383,0.011182108626198083,1.0,any communication media that operates in conjunction with various encoded machine-readable data formats
+What is HCI concerned with?,,,0.0,0.5279767215251923,0.00510204081632653,1.0,unanswerable
+What is computer vision?,,1,1.0,0.7434967160224915,0.01020408163265306,1.0,an interdisciplinary field that deals with how computers can be made to gain high-level understanding
+What is IoT?,,1,1.0,0.6571274995803833,0.009917355371900827,1.0,"IoT describes physical objects that are embedded with sensors, processing ability, software, and other technologies that connect and exchange data with other devices and systems over the Internet or other communication"
+What is rendering in graphics?,,1,1.0,0.6649852842092514,0.010835913312693499,1.0,"Graphics are visual representations on a surface, such as a computer screen. Examples are photographs, drawing, graphics designs, maps, engineering drawings, or other images"
+What is qualitative research?,,1,1.0,0.6689056605100632,0.012302284710017574,0.9545454545454546,"much more subjective non-quantitative, use different methods of collecting data, analyzing data, interpreting data"
+What is quantitative research?,,1,1.0,0.7559034526348114,0.010619469026548672,1.0,"systematic empirical investigation of quantitative properties and phenomena and their relationships, by asking a narrow question and collecting numerical data to analyze it utilizing statistical methods"
+What is an export?,,1,1.0,0.6266739368438721,0.006802721088435374,1.0,the act of obtaining the files from the repositories
+What is a knowledge base?,,1,1.0,0.7927105724811554,0.006535947712418301,1.0,body of knowledge represented in a form that can be used by a program
+What is an ontology in AI?,,1,1.0,0.714943528175354,0.012618296529968454,1.0,"set of objects, relations, concepts, and properties used by a particular domain of knowledge"
+What is gradient descent?,,1,1.0,0.6906228214502335,0.006600660066006601,1.0,Does it converge?
+What is Moore’s law?,,2,0.5,0.505654389038682,0.0014925373134328358,1.0,The transistor density in integrated circuits has been observed to roughly double every 18 months
+What is affective computing?,,2,0.5,0.8407271802425385,0.008665511265164644,1.0,"the design of systems and devices that can recognize, interpret, and process human emotions"
+What is sentiment analysis?,,2,0.5,0.7591861188411713,0.01001669449081803,1.0,Sentiment analysis involves identifying and classifying the emotional tone expressed in text
+What is transfer learning?,,2,0.5,0.7740237414836884,0.006837606837606838,1.0,when the knowledge gained from one problem is applied to a new problem
+What is differential privacy?,,1,1.0,0.699548602104187,0.007861635220125786,1.0,"data aggregation, de-identification and differential privacy"
+Which uses labels: supervised or unsupervised learning?,,1,1.0,0.6995760351419449,0.003389830508474576,1.0,unsupervised
+Which is numeric: qualitative or quantitative research?,,1,1.0,0.7697027027606964,0.0017574692442882249,0.9565217391304348,"Quantitative research Quantitative research involves systematic empirical investigation of quantitative properties and phenomena and their relationships, by asking a narrow question and collecting numerical data to analyze it utilizing statistical methods"
+Which is older: AI or ML?,,4,0.25,0.7215389311313629,0.0015772870662460567,1.0,ML
+Which handles images: NLP or computer vision?,,1,1.0,0.7779459357261658,0.003284072249589491,0.9285714285714286,computer vision
+Which is more costly: domestic or international trade?,,1,1.0,0.7539931833744049,0.0032258064516129032,0.9705882352941176,international trade
+Which uses rewards: reinforcement or supervised learning?,,1,1.0,0.7206920385360718,0.003289473684210526,0.9523809523809523,Reinforcement
+Which is for interaction design: HCI or graphics?,,,0.0,0.6011497378349304,0.0,1.0,HCI
+Which is variable: wind or nuclear power?,,1,1.0,0.7302545607089996,0.0032258064516129032,0.96,wind
+Which is biological inspiration: CNNs or SVMs?,,4,0.25,0.6144800186157227,0.0,1.0,SVMs are computing systems inspired by the biological neural networks that constitute animal brains
+Which needs labels: classification or clustering?,,14,0.07142857142857142,0.606597788631916,0.0,1.0,classification
+Why did deep learning advance after 2012?,,3,0.3333333333333333,0.752021074295044,0.006633499170812604,1.0,"hardware improvements (faster computers, graphics processing units, cloud computing and access to large amounts of data"
+Why can recommender systems spread misinformation?,,2,0.5,0.6121386140584946,0.0032733224222585926,1.0,"The AI learned that users tended to choose misinformation, conspiracy theories, and extreme partisan content"
+Why is big data called dirty data?,,1,1.0,0.6093147173523903,0.003169572107765452,1.0,fraction of data inaccuracies
+Why is AI energy-intensive?,,1,1.0,0.5725605115294456,0.0,1.0,unanswerable
+Why can AI cause job loss?,,1,1.0,0.6865043640136719,0.0031201248049922,1.0,unanswerable
+Why is explainability needed?,,2,0.5,0.582476794719696,0.004739336492890996,0.9714285714285714,"The better an explanation is at making predictions, the more useful it frequently can be and the more likely it will continue to explain a body of evidence better than its alternatives at explaining the evidence"
+Why regulate AI?,,1,1.0,0.6197299584746361,0.004754358161648178,1.0,development of public sector policies and laws for promoting and regulating AI; it is therefore related to the broader regulation
+Why does bias appear in AI?,,1,1.0,0.635811448097229,0.004901960784313725,1.0,"because the developers are overwhelmingly white and male: among AI engineers, about 4% are black and 20% are women"
+Why is CV tied to biology?,,,0.0,0.5269763618707657,0.0035398230088495575,1.0,unanswerable
+Why is trade complex internationally?,,1,1.0,0.668830156326294,0.006535947712418301,1.0,"cross-border trade typically incurs additional costs such as explicit tariffs as well as explicit or implicit non-tariff barriers such as time costs (due to border delays), language and cultural"
+How do GPUs and data together boost AI?,,2,0.5,0.6979056745767593,0.009724473257698542,0.9642857142857143,increase in computer power (including the hundred-fold increase in speed by switching
+How do AI agents improve?,,1,1.0,0.5680984780192375,0.0049833887043189366,1.0,through experience or training
+How does RLHF reduce hallucinations?,,4,0.25,0.530507393181324,0.0017825311942959,1.0,Reinforcing learning from human feedback
+How do filter bubbles form?,,3,0.3333333333333333,0.5174105484038591,0.001564945226917058,1.0,"they received multiple versions of the same misinformation. This convinced many users that the misinformation was true, and ultimately undermined trust"
+How does wind variability affect grids?,,1,1.0,0.5533898659050465,0.004893964110929853,1.0,can present substantial challenges to incorporating large amounts of wind power into a grid
+How do GANs create data?,,1,1.0,0.6002506613731384,0.0016313213703099511,1.0,realistic data synthesis
+How does IoT intelligence work?,,1,1.0,0.6740308552980423,0.006472491909385114,1.0,The need for intelligent control and decision at each level depends on the time sensitiveness of the IoT
+How do qualitative and quantitative differ?,,2,0.5,0.6039280444383621,0.0,1.0,Both qualitative and quantitative approaches involve a systematic interaction between theory and data
+How does digital media fuel the digital revolution?,,1,1.0,0.5876092463731766,0.004792332268370607,1.0,interconnectivity
+How does computer vision help robotics?,,1,1.0,0.6634528785943985,0.0016474464579901153,1.0,"fast, real-time video systems are critically important and often can simplify the processing needed for certain algorithms"

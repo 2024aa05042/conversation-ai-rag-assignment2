@@ -1,0 +1,76 @@
+{
+  "results": [
+    {
+      "k_per_method": 5,
+      "n_final": 10,
+      "rrf_k": 10,
+      "dense_mrr": 0.6356102635228849,
+      "sparse_mrr": 0.5575435352134382,
+      "hybrid_mrr": 0.6689859762675296,
+      "num_questions": 103
+    },
+    {
+      "k_per_method": 5,
+      "n_final": 10,
+      "rrf_k": 60,
+      "dense_mrr": 0.6356102635228849,
+      "sparse_mrr": 0.5575435352134382,
+      "hybrid_mrr": 0.6689859762675296,
+      "num_questions": 103
+    },
+    {
+      "k_per_method": 5,
+      "n_final": 20,
+      "rrf_k": 10,
+      "dense_mrr": 0.6382583840108113,
+      "sparse_mrr": 0.5614090148198481,
+      "hybrid_mrr": 0.6689859762675296,
+      "num_questions": 103
+    },
+    {
+      "k_per_method": 5,
+      "n_final": 20,
+      "rrf_k": 60,
+      "dense_mrr": 0.6382583840108113,
+      "sparse_mrr": 0.5614090148198481,
+      "hybrid_mrr": 0.6689859762675296,
+      "num_questions": 103
+    },
+    {
+      "k_per_method": 10,
+      "n_final": 10,
+      "rrf_k": 10,
+      "dense_mrr": 0.6356102635228849,
+      "sparse_mrr": 0.5575435352134382,
+      "hybrid_mrr": 0.681360764370473,
+      "num_questions": 103
+    },
+    {
+      "k_per_method": 10,
+      "n_final": 10,
+      "rrf_k": 60,
+      "dense_mrr": 0.6356102635228849,
+      "sparse_mrr": 0.5575435352134382,
+      "hybrid_mrr": 0.681360764370473,
+      "num_questions": 103
+    },
+    {
+      "k_per_method": 10,
+      "n_final": 20,
+      "rrf_k": 10,
+      "dense_mrr": 0.6382583840108113,
+      "sparse_mrr": 0.5614090148198481,
+      "hybrid_mrr": 0.68427027395474,
+      "num_questions": 103
+    },
+    {
+      "k_per_method": 10,
+      "n_final": 20,
+      "rrf_k": 60,
+      "dense_mrr": 0.6382583840108113,
+      "sparse_mrr": 0.5614090148198481,
+      "hybrid_mrr": 0.68427027395474,
+      "num_questions": 103
+    }
+  ]
+}

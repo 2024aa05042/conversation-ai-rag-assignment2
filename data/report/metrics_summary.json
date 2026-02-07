@@ -1,0 +1,7 @@
+{
+  "Q": 103,
+  "MRR": 0.7129912159038373,
+  "BERTScore_F1": 0.6760173865313669,
+  "Contextual_Precision": 0.0063800087827160686,
+  "Hallucination_Fraction": 0.9898977912398026
+}

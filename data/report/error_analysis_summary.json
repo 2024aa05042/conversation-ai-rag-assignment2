@@ -1,0 +1,11 @@
+{
+  "per_type_counts": {
+    "category": {
+      "context": 97,
+      "retrieval": 6
+    }
+  },
+  "per_type_total": {
+    "category": 103
+  }
+}

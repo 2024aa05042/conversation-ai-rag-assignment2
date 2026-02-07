@@ -1,0 +1,27 @@
+{
+  "per_type_counts": {
+    "factual": {
+      "context": 42,
+      "generation": 1,
+      "retrieval": 2
+    },
+    "comparative": {
+      "context": 14,
+      "generation": 5,
+      "retrieval": 1
+    },
+    "inferential": {
+      "context": 19,
+      "retrieval": 1
+    },
+    "multi-hop": {
+      "context": 18
+    }
+  },
+  "per_type_total": {
+    "factual": 45,
+    "comparative": 20,
+    "inferential": 20,
+    "multi-hop": 18
+  }
+}
